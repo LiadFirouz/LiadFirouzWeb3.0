@@ -1,0 +1,22 @@
+.lead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-white{
+    color: white;
+}
+
+.cover-container{
+    height: auto;
+}
+
+.features-container{
+  display: inline;
+  justify-content: center;
+}
+
+.carousel-container{
+  height: auto;
+}

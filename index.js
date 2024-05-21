@@ -5,7 +5,7 @@ const port = 3000;
 
 //Static files are linked to and the CSS shows up.
 app.use(express.static("./public/images"));
-app.use('/public/images/', express.static('./public/images'));
+app.use(express.static("./public/styles"));
 
 
 //Render the home page "/" index.ejs

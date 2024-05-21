@@ -1,28 +1,144 @@
 <%- include("partials/header.ejs") %>
 
+<style>
+  .lead{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
-  <h1>Home Page</h1>
+  .text-white{
+      color: white;
+  }
 
-  <p>Lorem ipsum dolor sit amet, et proin, justo mus. Porta suspendisse turpis netus sagittis tortor at, vitae aliquet
-    pharetra cras velit, id gravida, neque nulla lorem, posuere hac. Ultricies eget lacus vehicula, in ante aliquam
-    et,facilisis tempor duis orci. Sed molestie sem in duis eu id, nisl id ultricies metus blandit eget praesent, pede
-    tempornullam, vitae arcu tortor suspendisse nibh risus. Nulla id suscipit reiciendis nulla erat. Porta enim aute
-    luctus,ducimus sodales dolor.
-  </p>
-  <p>
-    Quam purus justo enim purus, dolor enim, ut eu lectus nam eget nibh. Ante illum nullam leo, vivamus aliquam massa
-    massainceptos fermentum porttitor, blandit vehicula, lorem in placerat ut aliquam at sociosqu. Vivamus duis
-    ultricies
-    aliquam placerat, tincidunt scelerisque imperdiet, egestas erat vel. Libero rerum. Donec ligula tristique, purus
-    montes,
-    feugiatid nunc in a nec. Duis odio, vitae sed etiam mi massa, laoreet amet purus amet rhoncus, eget sed, arcu
-    urna.
-    Maecenaswisi id, at donec enim. Proin nisl, pulvinar leo suspendisse, cum parturient non, congue leo et ut in,
-    neque ut
-    lacusauctor quam fermentum urna. Metus quis, mauris dictum aptent ultrices nulla viverra ornare, tempor elit enim
-    leo
-    donec,sed sed. Vivamus sapien facilisi, tempor arcu nulla justo sed et, eget suspendisse lacus sed nunc mattis
-    lectus.
-    Metusgravida.</p>
+  .cover-container{
+      height: auto;
+  }
+  
+  .features-container{
+    display: inline;
+    justify-content: center;
+  }
+
+  .carousel-container{
+    height: auto;
+  }
+
+</style>
+
+ <!-- Cover -->
+ <main style="height: 300px;">
+  <div class="d-grid py-5">
+    <h1 class="nav justify-content-center">Hi, I'm Liad Firouz</h1>
+    <p class="lead text-center">⧼ The best fullstack developer you will ever hire! ⧽</p>
+    <p class="lead">
+    <a href="#" class="btn btn-lg btn-outline-dark fw-bold border-white ">About Me →</a>
+    </p></div>
+</main>
+
+
+
+<!-- Features -->
+<div style="background-color: black; color: white;">
+  <div class="container px-4 py-5" id="hanging-icons">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 d-flex justify-content-center">
+      <div class="col d-flex justify-content-center">
+        <div class="icon-square d-inline-flex fs-4 me-3">
+          <img src="home-images/cpu.png" alt="cpu" height="30px">
+      </div>
+        <div>
+          <h3 class="fs-2">Featured title</h3>
+          <p>Python</p>
+          <p>Java</p>
+          <p>HTML</p>
+          <p>And more ...</p>
+        </div>
+      </div>
+
+      <div class="col d-flex justify-content-center">
+        <div class="icon-square d-inline-flexfs-4 me-3">
+          <img src="home-images/framework.png" alt="framework" height="30px">
+      </div> 
+        <div>
+          <h3 class="fs-2">Frameworks</h3>
+          <p>React</p>
+          <p>Bootstrap</p>
+          <p>VS code</p>
+        </div>
+      </div>
+
+      <div class="col d-flex justify-content-center">
+        <div class="icon-square d-inline-flex me-3 ">
+          <img src="home-images/check.png" alt="check" height="30px">
+      </div>
+        <div>
+          <h3 class="fs-2">Qualitys</h3>
+          <p>responsible</p>
+          <p>self-educated</p>
+          <p>diligent</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="d-flex justify-content-center pb-3"><a href="cv.html" class="btn btn-outline-light border-black btn-lg" >For More →</a></p>
+    
+  </div>
+</div>
+
+<!-- Jumbotron -->
+<div class="bg-image p-5 text-center shadow-1-strong  mb-5" style="height: 300px;">
+  <div class="pt-5">
+    <h1 class="nav">“Live as if you were to die tomorrow.</h1>
+    <h1> Learn as if you were to live forever”</h1>
+    <p class="d-flex justify-content-end">.Mahatma Gandhi</p>
+  </div>
+</div>
+
+<!--Carousel-->
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="home-images/Dicee-Game-img.png" class="d-block w-100" width="100px" height="400px" alt="...">            
+        <div class="container">
+          <div class="carousel-caption">
+            <p><a target="_blank" class="btn btn-lg c-white bg-white" href="https://liadfirouz.github.io/Dicee-Game/"><span style="color: black;">To the site</span></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="home-images/simon-game-img.png" class="d-block w-100" width="100px" height="400px" alt="...">            
+        <div class="container">
+          <div class="carousel-caption">
+            <p><a target="_blank" class="btn btn-lg c-white bg-white" href="https://liadfirouz.github.io/Simon-Game/"><span style="color: black;">To the site</span></a></p>
+          </div>
+        </div>
+      </div>
+     
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- Jumbotron -->
+<div class="p-5 text-center shadow-1-strong  mb-5">
+  <h1 class="nav justify-content-center">Don't be a stranger</h1>
+  <p class="lead">get in touch</p>
+<p><a href="#" class="btn btn-lg btn-outline-dark border-white" >Liad.Firouz@gmail.com</a>
+</p>
+    </div>
 
   <%- include("partials/footer.ejs") %>
